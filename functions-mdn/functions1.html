@@ -30,8 +30,12 @@
     let para = document.createElement('p');
 
     // Add your code here
-
+    function chooseName() {
+    let randomName = names[Math.floor(Math.random()*names.length)]; //recall Math.random returns random number between 0 (inclusive) and 1 (not inclusive) so don't need to substract 1 from .length when using Math.floor
+    para.textContent = randomName;
+    }
     // Don't edit the code below here!
+    chooseName();
 
     const section = document.querySelector('section');
 
